@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.theme-toggle {
+  padding: 8px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.result-container a {
+  color: #00aaff;  /* A brighter blue color for contrast */
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: left;
+}
+
+.result-container a:hover {
+  color: #0088cc;  /* Darker shade on hover for better visibility */
+}
+
+footer {
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.heart {
+  font-size: 14px;
+}
+
+.devtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #a65b00e7;
+  margin-left: 5px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a202c;
+  color: white;
+}
+
+body.dark-mode .card {
+  background-color: #2d3748;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #4a5568;
+}
+
+body.dark-mode .search-btn {
+  background-color: #2b6cb0;
+}
+
+body.dark-mode .search-btn:hover {
+  background-color: #3182ce;
+}
+
+body.dark-mode footer {
+  color: #cbd5e0;
+}
